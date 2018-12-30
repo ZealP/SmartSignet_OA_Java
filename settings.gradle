@@ -1,0 +1,1 @@
+include ':app', ':smartsignet_oa_library_java'
