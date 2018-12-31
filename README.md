@@ -9,7 +9,7 @@
 
 ## 版本说明
 ### 最新版本
-[![release](https://img.shields.io/badge/beta-V1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA_Java)
+[![release](https://img.shields.io/badge/beta-v1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA_Java)
 ### 更新日志：
      V1.0.1：完成OA智能签章框架Java版的研发工作，开放测试版体验；
 
