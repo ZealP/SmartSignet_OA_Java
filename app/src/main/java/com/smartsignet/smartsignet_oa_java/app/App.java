@@ -27,7 +27,6 @@ public class App extends Application {
          * @param secretKey 平台匹配密钥
          * @param serviceUrl 服务器地址
          */
-//        SignetOnline.initSealOnline(this, "xxx", "xxx", "http://www.baidu.com");
-        SignetOnline.initSealOnline(this, "a7d4f11d9cb247b283a77b586a1144ca", "af6b272ee61449cf89aadb25657e9ba0", "http://xxapi.pre.xyvip.com");
+        SignetOnline.initSealOnline(this, "xxx", "xxx", "http://www.baidu.com");
     }
 }
