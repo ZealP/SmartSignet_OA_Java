@@ -19,9 +19,9 @@ import okhttp3.ConnectionPool;
 public class SignetOnline {
 
     private static Application mApp;
-    private static String mOpenId;
-    private static String mSecretKey;
-    private static String mBaseServiceAddr;
+    private static String mOpenId = "";
+    private static String mSecretKey = "";
+    private static String mBaseServiceAddr = "";
 
     /**
      * 初始化组件
@@ -33,12 +33,12 @@ public class SignetOnline {
      */
     public static void initSealOnline(Application application, String openId, String secretKey, String serviceUrl) {
         mApp = application;
-        if (!TextUtils.isEmpty(openId) || !TextUtils.isEmpty(secretKey) || !TextUtils.isEmpty(serviceUrl)) {
+        if (!TextUtils.isEmpty(openId) && !TextUtils.isEmpty(secretKey) && !TextUtils.isEmpty(serviceUrl)) {
             mOpenId = openId;
             mSecretKey = secretKey;
             mBaseServiceAddr = serviceUrl;
-            initHttpReq(openId, secretKey);
         }
+        initHttpReq(mOpenId, mSecretKey);
     }
 
     /**
