@@ -9,9 +9,9 @@
 
 ## 版本说明
 ### 最新版本
-[![beta](https://img.shields.io/badge/beta-V1.0.1_beta1-orange.svg)](https://github.com/ZealP/SmartSignet_OA_Java)
+[![release](https://img.shields.io/badge/beta-V1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA_Java)
 ### 更新日志：
-     V1.0.1_beta1：完成OA智能签章框架Java版的研发工作，开放测试版体验；
+     V1.0.1：完成OA智能签章框架Java版的研发工作，开放测试版体验；
 
 <!-- ### Demo下载
 [![downloads](https://img.shields.io/badge/downloads-430k-blue.svg)](https://github.com/zhou-you/RxEasyHttp/blob/master/RxEasyHttp-Demo.apk?raw=true) -->
