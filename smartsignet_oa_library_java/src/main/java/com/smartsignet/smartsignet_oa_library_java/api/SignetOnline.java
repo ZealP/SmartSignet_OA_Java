@@ -38,7 +38,7 @@ public class SignetOnline {
             mSecretKey = secretKey;
             mBaseServiceAddr = serviceUrl;
         }
-        initHttpReq(mOpenId, mSecretKey);
+        initHttpReq(application, mBaseServiceAddr, mOpenId, mSecretKey);
     }
 
     /**
@@ -124,10 +124,10 @@ public class SignetOnline {
      * @param openId    平台唯一标识
      * @param secretKey 平台匹配密钥
      */
-    private static void initHttpReq(String openId, String secretKey) {
-        EasyHttp.init(mApp);
+    private static void initHttpReq(Application application, String baseServiceAddr, String openId, String secretKey) {
+        EasyHttp.init(application);
         EasyHttp.getInstance()
-                .setBaseUrl(mBaseServiceAddr)
+                .setBaseUrl(baseServiceAddr)
                 .debug("SmartSignet_OA_Java", true)
                 .setReadTimeOut(20 * 1000)
                 .setWriteTimeOut(40 * 1000)

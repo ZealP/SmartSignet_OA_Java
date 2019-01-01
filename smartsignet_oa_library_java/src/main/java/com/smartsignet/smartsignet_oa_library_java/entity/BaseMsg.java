@@ -7,6 +7,7 @@ package com.smartsignet.smartsignet_oa_library_java.entity;
  * Description:
  */
 public class BaseMsg {
+
     public String code;
     public String msg;
     public String data;

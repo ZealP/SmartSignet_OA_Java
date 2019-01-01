@@ -14,13 +14,13 @@ import com.smartsignet.smartsignet_oa_library_java.entity.BaseMsg;
  * Email: zealpeng@163.com
  * Description:
  */
-public abstract class SkCallBack<T> extends CallBack<T> {
+public class SkCallBack<T> extends CallBack<T> {
 
     private Context mContext;
     private ResultCallBack resultCallback;
 
     public SkCallBack(Context context, ResultCallBack callback) {
-        if (mContext != null) {
+        if (context != null) {
             mContext = context;
             resultCallback = callback;
         }

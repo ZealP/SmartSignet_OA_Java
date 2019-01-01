@@ -1,7 +1,6 @@
 package com.smartsignet.smartsignet_oa_java.app;
 
 import android.app.Application;
-
 import com.smartsignet.smartsignet_oa_library_java.api.SignetOnline;
 
 /**
@@ -17,7 +16,6 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         application = this;
 
         /**

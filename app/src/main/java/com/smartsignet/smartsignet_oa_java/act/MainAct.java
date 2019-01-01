@@ -26,8 +26,8 @@ public class MainAct extends Activity {
         setContentView(R.layout.act_main);
         main_result_msg = findViewById(R.id.main_result_msg);
 
-        testGetSignetList();
-//        testApplySignet();
+//        testGetSignetList();
+        testSignetQrCodeScan();
     }
 
     /**

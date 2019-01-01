@@ -52,7 +52,7 @@ public class SmartSignet {
                 .params("surplusTimes", surplusTimes + "")
                 .params("serialNo", serialNo)
                 .params("applyReason", applyReason)
-                .execute(new SkCallBack(application, resultCallback) {
+                .execute(new SkCallBack<String>(application, resultCallback) {
                 });
     }
 
@@ -75,7 +75,7 @@ public class SmartSignet {
                 .params("openid", openId)
                 .params("applyId", applyId)
                 .params("serialNo", serialNo)
-                .execute(new SkCallBack(application, resultCallback) {
+                .execute(new SkCallBack<String>(application, resultCallback) {
                 });
     }
 
@@ -98,7 +98,7 @@ public class SmartSignet {
                 .params("openid", openId)
                 .params("applyId", applyId)
                 .params("serialNo", serialNo)
-                .execute(new SkCallBack(application, resultCallback) {
+                .execute(new SkCallBack<String>(application, resultCallback) {
                 });
     }
 
@@ -123,7 +123,7 @@ public class SmartSignet {
                 .params("applyId", applyId)
                 .params("serialNum", serialNum)
                 .params("clientid", clientid)
-                .execute(new SkCallBack(application, resultCallback) {
+                .execute(new SkCallBack<String>(application, resultCallback) {
                 });
     }
 
