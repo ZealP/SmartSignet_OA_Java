@@ -1,8 +1,9 @@
-## SmartSignet_OA_Java
+# OA智能签章框架Java版
 
 政企(信产)研发中心 OA智能签章框架Java版
 
 ## 联系方式
+
 使用存在问题可联系研发中心或zealpeng@163.com
 
 ## 版本说明
@@ -14,7 +15,10 @@
 <!-- ### Demo下载
 [![downloads](https://img.shields.io/badge/downloads-430k-blue.svg)](https://github.com/zhou-you/RxEasyHttp/blob/master/RxEasyHttp-Demo.apk?raw=true) -->
 
-### 在相关build.gradle内做如下设置
+### 添加Gradle依赖
+
+1. 先在项目根目录的 build.gradle 的 repositories 添加:
+
 ```gradle
 allprojects {
         repositories {
@@ -22,15 +26,22 @@ allprojects {
             maven { url 'https://www.jitpack.io' }
         }
     }
+```
 
+2. 然后在dependencies添加:
+
+```gradle
 dependencies {
     implementation 'com.github.ZealP:SmartSignet_OA_Java:最新版本号'
 }
 ```
 ### 全局配置
+
 一般在 Aplication，或者基类中，只需要调用一次即可。
 初始化需要Application#onCreate()中初始化，记得在manifest.xml中注册Application。
-#### Application:
+
+Application:
+
 ```java
 public class App extends Application {
     public static App application;
@@ -50,10 +61,12 @@ public class App extends Application {
 }
 ```
 
-### 接口表
+## 接口表
+
 目前提供的接口表
 其中通用字段有两个(version和resultCallback)
 version指该请求当前的请求版本号
+
 ```java
     /**
      * 获取印章列
@@ -117,8 +130,10 @@ version指该请求当前的请求版本号
      signetQrCodeScan(version, serialNum, applyId, clientid, resultCallback)
 ```
 
-### 接口实例
+## 接口实例
+
 接口可按照如下实例进行调用:
+
 ```java
         /**
          * 示例:调用接口获取印章列表
@@ -162,9 +177,12 @@ version指该请求当前的请求版本号
             });
         }
 ```
-注意：
+
+>注意：
 version(最新请求版本号) 字段值在接口表内有注明。因为请求信息是异步处理的，ResultCallBack是用来回调处理结果的，它有多个回调方法可供调用。
-#### ResultCallBack所有回调方法如下:
+
+ResultCallBack所有回调方法如下:
+
 ```java
             /**
              * 请求成功回调的信息
@@ -206,8 +224,8 @@ version(最新请求版本号) 字段值在接口表内有注明。因为请求�
             }
 ```
 
-
 ## 声明
+
 此框架不得用来进行非本司或未被本司授权的商业化开发
 
 想使用Kotlin版本的框架请移步 [OA智能签章框架Kotlin版(已停止维护)](https://github.com/ZealP/SmartSignet_OA_Kotlin)
